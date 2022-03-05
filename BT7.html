@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [10,9,7,4,7,20,11,47,17,0]
+    let V = prompt('Nhập số Bất kỳ vào')
+    for (i=0;i<=arr.length;i++) {
+        if (V==arr[i]) {
+            alert('V is in the array')
+            arr.splice(i,1)
+
+        }else {
+            alert('V is not in the array')
+        }
+    }document.write(arr);
+
+
+</script>
+
+</body>
+</html>

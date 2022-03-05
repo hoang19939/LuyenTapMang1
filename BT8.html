@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [10,9,7,4,50,20,11,47,17,0]
+    let min;
+    for(let i=0;i<=arr.length;i++) {
+        for (j=i+1; j<=arr.length;j++){
+            if(arr[i]<arr[j]) {
+                min=arr[i];
+                console.log(min )
+                arr[i]=arr[j];
+                arr[j]=min;
+            }
+        }
+    }document.write('sắp xếp theo thứ tự giảm dần là :', arr)
+
+
+
+</script>
+
+</body>
+</html>

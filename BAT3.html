@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 4- Viết chương trình khởi tạo/nhập vào một mảng số nguyên và đảo ngược các phần tử trong mảng đó.</title>
+</head>
+<body>
+<script>
+    let arr = [10,9,7,4,7,20,11,47,17,0]
+    // let newarr = arr.reverse()
+    // // let newarr1 = arr.sort(function () {return -1})
+    // // alert(newarr1)
+    // alert(newarr);
+    let first = 0;
+    let last = arr.length -1
+    let TG ;
+    for (let i=first; i<=last; i++ ) {
+        TG=arr[first];
+        first=arr[last];
+        arr[last]=TG
+        first++
+        last--
+    }document.write(arr.join())
+</script>
+
+</body>
+</html>
